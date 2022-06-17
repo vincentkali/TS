@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>email list</h1>
+    <h1>Email list</h1>
     {% for form in formsData %}
     <p>{{form.name}}</p>
     <p>{{form.email}}</p>
@@ -17,6 +17,11 @@
     <p>{{form.subscribe_time}}</p>
     <p>{{form.unsubscribe_time}}</p>
     {% endfor %}
+
+    <div style="margin-top: 50px;">
+        <h1>Other link</h1>
+        <a href="/">Home</a>
+    </div>
 </body>
 
 </html>

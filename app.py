@@ -10,8 +10,8 @@ def home():
 
 @app.route('/email', methods=["POST"])
 def email_post():
-    print(request.form["name"])
-    print(request.form["email"])
+    forms = Forms()
+    forms.addData(name= request.form["name"], email= request.form["email"])
     return render_template('email_got.html')
 
 @app.route('/email', methods=["GET"])
