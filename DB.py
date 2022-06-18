@@ -25,6 +25,7 @@ class Forms:
             "subscribe": True,
             "subscribe_time":  datetime.now(),
             "unsubscribe_time":  datetime.now(),
+            "sended": False
         }
         self.Coll.insert_one(form)
 
